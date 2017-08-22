@@ -1,6 +1,6 @@
 package com.jirifrank.work.moneta.test.controller;
 
-import com.jirifrank.work.moneta.test.config.ApplicationConfig;
+import com.jirifrank.work.moneta.test.config.Application;
 import com.jirifrank.work.moneta.test.dto.TransformationRequest;
 import com.jirifrank.work.moneta.test.dto.TransformationResponse;
 import org.junit.Assert;
@@ -20,7 +20,7 @@ import java.net.URISyntaxException;
 @RunWith(SpringRunner.class)
 @SpringBootTest(
 		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-		classes = ApplicationConfig.class
+		classes = Application.class
 )
 public class TransformationControllerTest {
 
