@@ -15,7 +15,7 @@ public class TransformationServiceTest {
 
 	@Test
 	public void transformTest() {
-		transform("Ahoj, jak se máš?", "?šÁm Es kAj ,jOha");
+		transform("Ahoj, jak se máš?", "?šÁm Es kAj ,jOhA");
 		transform("Je     mi   fajn.", ".njAf Im Ej");
 	}
 

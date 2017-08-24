@@ -33,11 +33,10 @@ public class TransformationService {
 		value = StringUtils.normalizeSpace(value);
 
 		// reverse order
-		value = StringUtils.reverse(value);
+		value = StringUtils.reverse(value).toLowerCase();
 
 		// make lowercase and transform to array
-		char[] outputArray = value.toLowerCase().toCharArray();
-
+		char[] outputArray = value.toCharArray();
 
 		// match all occurences of SEARCH_PATTERN
 		Matcher matcher = SERACH_PATTERN.matcher(StringUtils.stripAccents(value));
